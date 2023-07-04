@@ -15,5 +15,5 @@ Mood Application is a mobile application that consists of four major functions. 
 <img width="755" alt="Screenshot 2023-07-04 at 7 50 39 AM" src="https://github.com/dever-SH/Mood-Tracker-Application/assets/73385631/2175237d-7005-42e7-a079-4805d6a0689e"> <br>
 
 ## Project Team
-> <a href="https://github.com/EAnhar"> Anhar.</a> <a href="https://github.com/daijtit"> Dai.</a> Joud. <a href="https://github.com/dever-SH"> Shaden. </a> <a href="https://github.com/shathaa2"> Shatha. </a> <br> <br>
+> <a href="https://github.com/EAnhar"> Anhar.</a> <a href="https://github.com/daijtit"> Dai.</a> Joud. <a href="https://github.com/dever-SH"> Shaden. </a> <a href="https://github.com/shathaa2"> Shatha. </a>
 ###### Thank You
