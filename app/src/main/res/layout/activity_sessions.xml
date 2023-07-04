@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sessionb"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".sessions">
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="760dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollVer"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <!--relax-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:layout_margin="30dp"
+                android:text="Relax"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <!--relax 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/r1"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/relaximg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/relaxsound1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!--relax 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/r2"
+                        android:layout_margin="10dp"
+
+                        android:layout_toEndOf="@id/r1"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/relaximg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/relaxsound2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn1"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn1"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--relax 3 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/r3"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/r2"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/relaximg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/relaxsound3"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn2"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn2"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--relax 4 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/r4"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/r3"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/relaximg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/relaxsound4"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn3"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn3"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <!--sleep-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:layout_marginTop="30dp"
+                android:text="Sleep"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <!--sleep 1-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/s1"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/sleepimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/sleepsound1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn4"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn4"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--sleep 2-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/s2"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/s1"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/sleepimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/sleepsound2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn5"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn5"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--sleep 3-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/s3"
+                        android:layout_margin="10dp"
+
+                        android:layout_toEndOf="@id/s2"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/sleepimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/sleepsound3"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn6"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn6"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--sleep 4-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/s4"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/s3"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/sleepimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/sleepsound4"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn7"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn7"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <!--rain-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:layout_marginTop="30dp"
+                android:text="Rain"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <!--rain 1-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/n1"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/rainimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/rainsound1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn8"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn8"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--rain 2-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/n2"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/n1"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/rainimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/rainsound2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn9"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn9"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--rain 3-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/n3"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/n2"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/rainimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/rainsound3"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn10"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn10"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--rain 4-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/n4"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/n3"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/sleepimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/rainsound4"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn11"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn11"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <!--water Fall-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:layout_marginTop="30dp"
+                android:text="Waterfall"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    >
+                    <!--waterfall 1-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/w1"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/waterfallimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/waterfallsound1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn12"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn12"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--waterfall 2-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/w2"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/w1"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/waterfallimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/waterfallsound2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn13"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn13"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--waterfall 3-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/w3"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/w2"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/waterfallimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/waterfallsound3"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn14"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn14"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!--waterfall 4-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="2dp"
+                        android:padding="2dp"
+                        android:id="@+id/w4"
+                        android:layout_margin="10dp"
+                        android:layout_toEndOf="@id/w3"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/sleepimg" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-20dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/waterfallsound4"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="playptn15"
+                                android:src="@drawable/play_btn"
+                                android:tag="playbtn15"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/sessionsbg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="690dp"
+                android:background="@color/Transparent"
+                android:onClick="goTimeLine" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="690dp"
+                android:layout_marginLeft="-110dp"
+                android:background="@color/Transparent"
+                android:onClick="goSetting" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

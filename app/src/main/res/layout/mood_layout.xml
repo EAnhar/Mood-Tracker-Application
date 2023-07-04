@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-160dp"
+    android:layout_marginLeft="-20dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/virLine"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="120dp"
+        android:background="?android:attr/listDivider"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/rect2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/faceMood"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        android:background="@drawable/good"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="25"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/moodTxt"
+        android:layout_width="240dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginLeft="118dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="240dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginLeft="118dp"
+        android:text="TextView2"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:maxWidth="50dp"
+        android:maxHeight="15dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="107dp"
+        android:layout_weight="10"
+        android:rotation="90"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:text="March"/>
+</RelativeLayout>

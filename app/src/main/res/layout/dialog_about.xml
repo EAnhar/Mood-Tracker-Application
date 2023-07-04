@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/ic_about" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="About Us"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="26dp"
+        android:layout_marginHorizontal="26dp"
+        android:text="We track everything about ourselves.\n Our steps, our heart rate, our weight, etc. . .
+\nBut never how we feel.\nAnd that makes it harder to manage our mental well-being.\n mood lets you see how you feel, with one tap a day. So that you can see the bigger picture and take charge of your mental well-being.
+ \nmood is 100% private and only accessible to you.\n We can’t see, share, track, or sell your information "
+        android:textAlignment="center"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_okay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/transparent"
+            android:stateListAnimator="@null"
+            android:layout_alignParentEnd="true"
+            android:text="Okay"
+            android:textAllCaps="false"
+            android:onClick="okay_dialog"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+    </RelativeLayout>
+</LinearLayout>

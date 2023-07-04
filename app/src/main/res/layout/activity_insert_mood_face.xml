@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".insertMoodFace">
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="760dp"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/acme"
+        android:text="How are you doing today?"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:max="8"
+        android:progress="2"
+        android:progressTint="#FEAE9F"
+        android:progressTintMode="multiply"
+        android:thumbTintMode="multiply"
+        app:tickMarkTintMode="multiply" />
+
+    <ImageView
+        android:id="@+id/moodFace"
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:padding="110dp"
+        android:src="@drawable/good"/>
+
+    <TextView
+        android:id="@+id/moodTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="370dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="good"
+        android:textAllCaps="true"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/contBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#423660"
+        android:onClick="contFunc"
+        android:text="continue" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+        <!-- Base application theme. -->
+<!--        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--            &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--            <item name="colorPrimary">@color/dark_blue</item>-->
+<!--            <item name="colorPrimaryDark">@color/blue</item>-->
+<!--            <item name="colorAccent">@color/red</item>-->
+<!--            <item name="android:windowAnimationStyle">@style/DialogAnimation</item> &lt;!&ndash;custom animation style&ndash;&gt;-->
+<!--        </style>-->
+
+        <style name="DialogAnimation">
+            <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+            <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+        </style>
+    <style name="Widget.Theme.MoodTrackerApp.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facebg3"
+    tools:context=".note">
+
+    <ImageView
+        android:id="@+id/moodFace2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/good"
+        android:padding="20dp"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/moodTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/acme"
+        android:gravity="left"
+        android:text="@string/good"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="left"
+        android:text="What's happening?"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="310dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:gravity="start"
+        android:fontFamily="@font/carter_one"
+        android:hint="Your Notes.."
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:background="@color/basic_gray"/>
+
+    <Button
+        android:id="@+id/contBtn2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="#423660"
+        android:onClick="insertToDataBase"
+        android:text="done" />
+
+</RelativeLayout>

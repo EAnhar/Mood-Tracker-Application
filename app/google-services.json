@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "837730723862",
+    "project_id": "moodtracker-4cd2b",
+    "storage_bucket": "moodtracker-4cd2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837730723862:android:747d823844268c9248ad37",
+        "android_client_info": {
+          "package_name": "com.example.moodtrackerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837730723862-i2sog1d4htloejia394iqmv898c27kuh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moodtrackerapp",
+            "certificate_hash": "01e4b5fefbed014469b80e5317a87a2d2690b4c4"
+          }
+        },
+        {
+          "client_id": "837730723862-pa828qlct0csbt76k1jf5qohbq034gmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClSfB-24eJngISvfYbA55dXRofv-nTpCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837730723862-pa828qlct0csbt76k1jf5qohbq034gmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

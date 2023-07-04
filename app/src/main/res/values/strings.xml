@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">moodTrackerApp</string>
+    <string name="sign_up_sign_in">Sign Up/ Sign In</string>
+    <string name="textview">TextView</string>
+    <string name="sign_up_sign_in2">sign up / sign in</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="_2022">2022</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">sign up</string>
+    <string name="good">good</string>
+</resources>

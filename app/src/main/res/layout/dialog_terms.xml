@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/ic_terms" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:text="Terms and Conditions"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginVertical="20dp"
+
+                android:text="⚫ By installing, accessing or using our Apps or related Services You also confirm that You are the owner of or otherwise legally use the Device, and that You are at least 16 years of age (or older if required to comply with applicable laws) and have a full legal capacity to enter into this agreement. In case You are between 16 and 18 years of age, You hereby confirm, that Your Representative has reviewed and agrees to the terms and conditions of this EULA and allows You to access and/or use our Apps and related Services.
+
+                    \n\n ⚫ Our Apps download/purchase page may contain certain additional terms, conditions and requirements, which constitute a part of this EULA. In case You download/purchase the Apps through the Mobile Platform, please, review the terms and conditions of the owner of that particular Mobile Platform, which may provide for certain additional requirements applicable to the download of the Apps through that Mobile Platform, its installation and use." />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_okay"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:stateListAnimator="@null"
+                    android:text="Okay"
+                    android:layout_alignParentRight="true"
+                    android:textAllCaps="false"
+                    android:onClick="okay_dialog"
+                    android:textColor="@android:color/holo_blue_dark"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

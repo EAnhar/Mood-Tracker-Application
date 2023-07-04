@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bottomRoundRect"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="650dp"
+        android:layout_weight="1"
+        android:background="@drawable/asset_7" />
+
+    <ImageButton
+        android:id="@+id/settingBtn"
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/asset_9"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/timeLnBtn"
+        android:layout_width="140px"
+        android:layout_height="70px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/asset_10"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="215px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="SESSIONS"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/backCir"
+        android:layout_width="215px"
+        android:layout_height="215px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/asset_11"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/frontCir"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/asset_12"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/sessionsBtn"
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="298dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/asset_14"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</RelativeLayout>

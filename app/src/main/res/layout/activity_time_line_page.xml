@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/tlbg3"
+    tools:context=".timeLinePage">
+<RelativeLayout
+    android:layout_width="360dp"
+    android:layout_height="760dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginRight="78dp"
+        android:alpha="0"
+        android:background="@color/black"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="addFunc"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ScrollView
+        android:id="@+id/baseSV"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_marginTop="210dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/moodRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/timelinebggsvg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="690dp"
+            android:background="@color/Transparent"
+            android:onClick="goSetting" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="690dp"
+            android:background="@color/Transparent"
+            android:onClick="goSessions" />
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

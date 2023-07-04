@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asset_1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/logo1"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-60dp">
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:backgroundTint="#423660"
+            android:fontFamily="@font/carter_one"
+            android:onClick="signIn"
+            android:text="@string/sign_in"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="570dp"
+            android:backgroundTint="#4D423660"
+            android:fontFamily="@font/carter_one"
+            android:onClick="signUp"
+            android:text="@string/sign_up"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"
+            tools:ignore="TextContrastCheck" />
+    </RelativeLayout>
+</RelativeLayout>
